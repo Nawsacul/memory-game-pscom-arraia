@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Jogo da Memoria - Arraiá Pajuçara</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="modal.css">
+  <link rel="sortcut icon" href="./img/icon.ico" type="img/x-icon" />
+</head>
+
+<body>
+
+  <div class="grid-container">
+    <div class="item1">0</div>
+    <div class="item2">1</div>
+    <div class="item3">2</div>
+    <div class="item4">3</div>
+    <div class="item5">4</div>
+    <div class="item6">
+      <section class="memory-game">
+        <div class="memory-card" data-framework="card1">
+          <div class="front-face front-face--primeira"></div>
+          <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-framework="card1">
+          <div class="front-face front-face--primeira"></div>
+          <div class="back-face"></div>
+        </div>
+
+        <div class="memory-card" data-framework="card2">
+          <div class="front-face front-face--segunda"></div>
+          <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-framework="card2">
+          <div class="front-face front-face--segunda"></div>
+          <div class="back-face"></div>
+        </div>
+
+        <div class="memory-card" data-framework="card3">
+          <div class="front-face front-face--terceira"></div>
+          <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-framework="card3">
+          <div class="front-face front-face--terceira"></div>
+          <div class="back-face"></div>
+        </div>
+
+        <div class="memory-card" data-framework="card4">
+          <div class="front-face front-face--quarta"></div>
+          <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-framework="card4">
+          <div class="front-face front-face--quarta"></div>
+          <div class="back-face"></div>
+        </div>
+
+        <div class="memory-card" data-framework="card5">
+          <div class="front-face front-face--quinta"></div>
+          <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-framework="card5">
+          <div class="front-face front-face--quinta"></div>
+          <div class="back-face"></div>
+        </div>
+
+        <div class="memory-card" data-framework="card6">
+          <div class="front-face front-face--sexta"></div>
+          <div class="back-face"></div>
+        </div>
+        <div class="memory-card" data-framework="card6">
+          <div class="front-face front-face--sexta"></div>
+          <div class="back-face"></div>
+        </div>
+      </section>
+    </div>
+    <div class="item7">A</div>
+    <div class="item8">B</div>
+    <div class="item9">C</div>
+  </div>
+
+  <svg class="info" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+    <path
+      d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 25 11 A 3 3 0 0 0 22 14 A 3 3 0 0 0 25 17 A 3 3 0 0 0 28 14 A 3 3 0 0 0 25 11 z M 21 21 L 21 23 L 22 23 L 23 23 L 23 36 L 22 36 L 21 36 L 21 38 L 22 38 L 23 38 L 27 38 L 28 38 L 29 38 L 29 36 L 28 36 L 27 36 L 27 21 L 26 21 L 22 21 L 21 21 z">
+    </path>
+  </svg>
+  <div class="overlay">
+    <div class="modal-info">
+      <h2>Instruções do Jogo de Memória:</h2>
+      <p>Atalhos do jogo:</p>
+      <ul>
+        <li><strong>Mostrar Cartas:</strong> Pressione a tecla <kbd>[</kbd>.</li>
+        <li><strong>Selecionar Carta:</strong> Pressione simultaneamente as teclas correspondentes à carta desejada.
+          Exemplo: <kbd>A</kbd> + <kbd>1</kbd> para A1, <kbd>B</kbd> + <kbd>3</kbd> para B3.</li>
+        <li><strong>Reembaralhar Cartas:</strong> Pressione a tecla <kbd>]</kbd>.</li>
+      </ul>
+
+      <button class="close-modal">OK</button>
+    </div>
+  </div>
+
+
+  <script src="scripts.js"></script>
+  <script src="closeModal.js"></script>
+</body>
+
+</html>
